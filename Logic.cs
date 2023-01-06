@@ -8,25 +8,32 @@ namespace LogicalProgramsNew
 {
     internal class Logic
     {
-        public void Check_Char_Vowel_Or_Consonant()
+        public void Perfect_Number()
         {
-            char ch;
+            int n, i, sum;
+            Console.WriteLine("");
+            Console.Write("Check whether a given number is perfect number or not:\n");
+            Console.Write("--------------------------------------------------------");
+            Console.Write("\n\n");
 
-            Console.WriteLine("Enter any character: ");
-            ch = Convert.ToChar(Console.ReadLine());
-
-
-            // Condition for vowel checking
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+            Console.Write("Input the  number : ");
+            n = Convert.ToInt32(Console.ReadLine());
+            sum = 0;
+            Console.Write("The positive divisor  : ");
+            for (i = 1; i < n; i++)
             {
-
-                Console.WriteLine(ch + " is Vowel.");
-
+                if (n % i == 0)
+                {
+                    sum = sum + i;
+                    Console.Write("{0}  ", i);
+                }
             }
-            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-            {
-                Console.WriteLine(ch + " is Consonant.");
-            }
+            Console.Write("\nThe sum of the divisor is : {0}", sum);
+            if (sum == n)
+                Console.Write("\nSo, the number is perfect.");
+            else
+                Console.Write("\nSo, the number is not perfect.");
+            Console.Write("\n");
         }
     }
 }

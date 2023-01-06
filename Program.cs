@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.Check_Char_Vowel_Or_Consonant();
+            num.Perfect_Number();
         }
     }
 }
