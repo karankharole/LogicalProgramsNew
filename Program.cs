@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.Perfect_Number();
+            num.Reverse_Number();
         }
     }
 }

@@ -8,32 +8,19 @@ namespace LogicalProgramsNew
 {
     internal class Logic
     {
-        public void Perfect_Number()
+        public void Reverse_Number()
         {
-            int n, i, sum;
-            Console.WriteLine("");
-            Console.Write("Check whether a given number is perfect number or not:\n");
-            Console.Write("--------------------------------------------------------");
-            Console.Write("\n\n");
-
-            Console.Write("Input the  number : ");
-            n = Convert.ToInt32(Console.ReadLine());
-            sum = 0;
-            Console.Write("The positive divisor  : ");
-            for (i = 1; i < n; i++)
+            Console.WriteLine("\n");
+            int n, reverse = 0, rem;
+            Console.Write("Enter a number : ");
+            n = int.Parse(Console.ReadLine());
+            while (n != 0)
             {
-                if (n % i == 0)
-                {
-                    sum = sum + i;
-                    Console.Write("{0}  ", i);
-                }
+                rem = n % 10;
+                reverse = reverse * 10 + rem;
+                n /= 10;
             }
-            Console.Write("\nThe sum of the divisor is : {0}", sum);
-            if (sum == n)
-                Console.Write("\nSo, the number is perfect.");
-            else
-                Console.Write("\nSo, the number is not perfect.");
-            Console.Write("\n");
+            Console.Write("Reversed Number: " + reverse);
         }
     }
 }
