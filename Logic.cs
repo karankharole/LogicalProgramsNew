@@ -8,24 +8,25 @@ namespace LogicalProgramsNew
 {
     internal class Logic
     {
-        public void Fibonacci_Series()
+        public void Check_Char_Vowel_Or_Consonant()
         {
-            int num;
-            int num1 = 0;
-            int num2 = 1;
-            int num3;
-            Console.Write("Enter the number : ");
-            num = int.Parse(Console.ReadLine());
-            Console.Write(" " + num1 + " " + num2 + " ");
+            char ch;
 
-            for (int i = 2; i <= num; i++)
+            Console.WriteLine("Enter any character: ");
+            ch = Convert.ToChar(Console.ReadLine());
+
+
+            // Condition for vowel checking
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
             {
-                num3 = num1 + num2;
-                Console.Write(" " + num3 + " ");
-                num1 = num2;
-                num2 = num3;
-            }
 
+                Console.WriteLine(ch + " is Vowel.");
+
+            }
+            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+            {
+                Console.WriteLine(ch + " is Consonant.");
+            }
         }
     }
 }

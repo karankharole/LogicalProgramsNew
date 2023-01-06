@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.Fibonacci_Series();
+            num.Check_Char_Vowel_Or_Consonant();
         }
     }
 }
