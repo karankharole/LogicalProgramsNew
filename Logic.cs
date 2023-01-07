@@ -8,19 +8,22 @@ namespace LogicalProgramsNew
 {
     internal class Logic
     {
-        public void Reverse_Number()
+        public void CheckPrimeNumber(int No)
         {
-            Console.WriteLine("\n");
-            int n, reverse = 0, rem;
-            Console.Write("Enter a number : ");
-            n = int.Parse(Console.ReadLine());
-            while (n != 0)
+            int flag = 0;
+            for (int i = 2; i <= (No - 1); i++)
             {
-                rem = n % 10;
-                reverse = reverse * 10 + rem;
-                n /= 10;
+                if (No % i == 0)
+                {
+                    Console.WriteLine(No + " is not Prime Number");
+                    flag = 1;
+                    break;
+                }
             }
-            Console.Write("Reversed Number: " + reverse);
+            if (flag == 0)
+            {
+                Console.WriteLine(No + " is Prime Number");
+            }
         }
     }
 }

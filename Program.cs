@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.Reverse_Number();
+            num.CheckPrimeNumber(10);
         }
     }
 }
