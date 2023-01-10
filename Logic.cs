@@ -9,24 +9,17 @@ namespace LogicalProgramsNew
     internal class Logic
     {
 
-        public void Leap_Year()
+
+        public void Swap_Two_Number()
         {
-            int year = 2022;
-            if (year > 1000 && year < 9999)
-            {
-                if (year % 4 == 0 || year % 400 == 0)
-                {
-                    Console.WriteLine("Leay year.");
-                }
-                else
-                {
-                    Console.WriteLine("not leap year");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Wrong Input .");
-            }
+            int num1 = 12;
+            int num2 = 23;
+            int temp;
+            temp = num1;
+            num1 = num2;
+            num2 = temp;
+            Console.WriteLine("Swapping of number is  : " + num1 + " " + num2);
+
         }
     }
 }

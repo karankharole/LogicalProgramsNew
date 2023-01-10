@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.Leap_Year();
+            num.Swap_Two_Number();
         }
     }
 }
