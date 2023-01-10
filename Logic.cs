@@ -8,21 +8,24 @@ namespace LogicalProgramsNew
 {
     internal class Logic
     {
-        public void CheckPrimeNumber(int No)
+
+        public void Leap_Year()
         {
-            int flag = 0;
-            for (int i = 2; i <= (No - 1); i++)
+            int year = 2022;
+            if (year > 1000 && year < 9999)
             {
-                if (No % i == 0)
+                if (year % 4 == 0 || year % 400 == 0)
                 {
-                    Console.WriteLine(No + " is not Prime Number");
-                    flag = 1;
-                    break;
+                    Console.WriteLine("Leay year.");
+                }
+                else
+                {
+                    Console.WriteLine("not leap year");
                 }
             }
-            if (flag == 0)
+            else
             {
-                Console.WriteLine(No + " is Prime Number");
+                Console.WriteLine("Wrong Input .");
             }
         }
     }

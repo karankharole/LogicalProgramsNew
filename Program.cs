@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.CheckPrimeNumber(10);
+            num.Leap_Year();
         }
     }
 }
