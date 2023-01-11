@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.Swap_Two_Number();
+            num.Largest_Among_Three_Numbers();
         }
     }
 }
