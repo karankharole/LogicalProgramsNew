@@ -8,22 +8,22 @@ namespace LogicalProgramsNew
 {
     internal class Logic
     {
-
-        public void Check_Even_Or_Odd()
+        public void Power_Of_2()
         {
-            int number;
-            Console.WriteLine("Enter the Number to check Even or Odd : ");
-            number = int.Parse(Console.ReadLine());
-            if (number % 2 == 0)
+            Console.WriteLine("Enter a number : ");
+            string inputByUser = Console.ReadLine();
+            int numVal = Int32.Parse(inputByUser);
+            if (numVal >= 0 || numVal < 31)
             {
-                Console.WriteLine("Number is Even");
-            }
-            else
-            {
-                Console.WriteLine("Number is Odd");
-            }
+                int temp = 1;
+                for (int i = 0; i < numVal; i++)
+                {
+                    temp = 2 * temp;
+                    Console.WriteLine(temp);
+                }
 
+
+            }
         }
-
     }
 }

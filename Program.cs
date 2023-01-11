@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.Check_Even_Or_Odd();
+            num.Power_Of_2();
         }
     }
 }
