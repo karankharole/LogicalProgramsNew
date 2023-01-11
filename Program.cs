@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.Largest_Among_Three_Numbers();
+            num.Check_Even_Or_Odd();
         }
     }
 }
