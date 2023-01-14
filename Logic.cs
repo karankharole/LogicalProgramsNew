@@ -8,15 +8,15 @@ namespace LogicalProgramsNew
 {
     internal class Logic
     {
-        public void harmonicSeries(int n)
+        public void QuotientAndRem(int dividend, int divisor)
         {
-            double value = 0;
-            for (int i = 1; i <= n; i++)
-            {
-                value += 1 / (float)i;
-            }
-            Console.WriteLine(value);
-            Console.WriteLine("Sum of n Numbher of Hrmonic series is " + value);
+            int quotient = dividend / divisor;
+            int remainder = dividend % divisor;
+
+            Console.WriteLine("Quotient is : " + quotient);
+            Console.WriteLine("Remainder is : " + remainder);
+
         }
+
     }
 }

@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.harmonicSeries(11);
+            num.QuotientAndRem(12, 2);
         }
     }
 }
