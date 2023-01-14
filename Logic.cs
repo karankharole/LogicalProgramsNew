@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,14 +9,16 @@ namespace LogicalProgramsNew
 {
     internal class Logic
     {
-        public void QuotientAndRem(int dividend, int divisor)
+        public void CalculateStopWatchTime(int s)
         {
-            int quotient = dividend / divisor;
-            int remainder = dividend % divisor;
-
-            Console.WriteLine("Quotient is : " + quotient);
-            Console.WriteLine("Remainder is : " + remainder);
-
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+            for (int i = 0; i < s; i++)
+            {
+                Console.WriteLine(".");
+            }
+            stopwatch.Stop();
+            Console.WriteLine("Time Elapsed : " + stopwatch.Elapsed);
         }
 
     }

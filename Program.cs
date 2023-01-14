@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.QuotientAndRem(12, 2);
+            num.CalculateStopWatchTime(3);
         }
     }
 }
