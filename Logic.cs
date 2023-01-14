@@ -8,22 +8,15 @@ namespace LogicalProgramsNew
 {
     internal class Logic
     {
-        public void Power_Of_2()
+        public void harmonicSeries(int n)
         {
-            Console.WriteLine("Enter a number : ");
-            string inputByUser = Console.ReadLine();
-            int numVal = Int32.Parse(inputByUser);
-            if (numVal >= 0 || numVal < 31)
+            double value = 0;
+            for (int i = 1; i <= n; i++)
             {
-                int temp = 1;
-                for (int i = 0; i < numVal; i++)
-                {
-                    temp = 2 * temp;
-                    Console.WriteLine(temp);
-                }
-
-
+                value += 1 / (float)i;
             }
+            Console.WriteLine(value);
+            Console.WriteLine("Sum of n Numbher of Hrmonic series is " + value);
         }
     }
 }

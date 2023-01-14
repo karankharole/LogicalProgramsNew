@@ -6,7 +6,7 @@
         {
 
             Logic num = new Logic();
-            num.Power_Of_2();
+            num.harmonicSeries(11);
         }
     }
 }
